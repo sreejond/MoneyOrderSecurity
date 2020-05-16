@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="hw4" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/hw4" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-std=c++11" />
+					<Add option="-g" />
+					<Add directory="include" />
+					<Add directory="C:/OpenSSL-Win32/include" />
+					<Add directory="C:/boost_1_56_0/boost_1_56_0" />
+				</Compiler>
+				<Linker>
+					<Add library="C:/OpenSSL-Win32/lib/openssl.lib" />
+					<Add library="C:/OpenSSL-Win32/lib/MinGW/libcrypto-1_1.a" />
+					<Add library="C:/OpenSSL-Win32/lib/MinGW/libssl-1_1.a" />
+					<Add library="C:/boost_1_56_0/boost_1_56_0/stage/lib/libboost_serialization-mgw49-mt-1_56.a" />
+					<Add library="C:/boost_1_56_0/boost_1_56_0/stage/lib/libboost_serialization-mgw49-mt-d-1_56.a" />
+					<Add directory="C:/OpenSSL-Win32/lib" />
+					<Add directory="C:/boost_1_56_0/boost_1_56_0/stage/lib" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/hw4" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-std=c++11" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="include/Bank.h" />
+		<Unit filename="include/Customer.h" />
+		<Unit filename="include/Merchant.h" />
+		<Unit filename="include/MoneyOrder.h" />
+		<Unit filename="include/bigint.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="src/Bank.cpp" />
+		<Unit filename="src/Customer.cpp" />
+		<Unit filename="src/Merchant.cpp" />
+		<Unit filename="src/MoneyOrder.cpp" />
+		<Unit filename="src/bigint.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
